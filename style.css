@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+  --bottom-margin: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: calc(100vh -0.1px);
+  min-height: calc(100vh - 0.1px);
+  margin: 0 2rem;
+  background-color: var(--yellow);
+}
+
+.container {
+  background-color: var(--White);
+  max-width: 378px;
+  padding: 1.5rem;
+  border: 1.5px solid black;
+  border-radius: 1rem;
+  box-shadow: 10px 10px;
+}
+
+.container .img-container img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.container .content-container {
+  padding: 1rem 0;
+}
+
+.content-container .btn {
+  font-weight: 800;
+  background-color: var(--yellow);
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin-bottom: var(--bottom-margin)
+}
+
+.container .content-container p {
+  font-weight: 600;
+  margin-bottom: var(--bottom-margin);
+}
+
+.container .content-container p:nth-of-type(2) {
+  color: var(--Grey);
+}
+
+h1,
+a {
+  color: var(--black);
+  font-weight: 800;
+  margin-bottom: var(--bottom-margin);
+  text-decoration: none;
+  cursor: pointer
+}
+
+
+
+a:link,
+a:active {
+  color: var(--yellow);
+  transition: all 0.02s ease-in-out;
+}
+
+.container .content-container section {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  color: var(--black);
+}
+
+.container .content-container section img {
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  h1 {
+    color: var(--black);
+    font-weight: 800;
+    margin-bottom: var(--bottom-margin);
+    cursor: pointer
+  }
+
+  a:hover
+  a:active {
+    color: var(--yellow);
+    transition: all 0.02s ease-in;
+  }
+
+  .container .content-container h1:hover {
+    color: var(--yellow);
+    cursor: pointer;
+  }
+
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
